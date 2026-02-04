@@ -10,14 +10,15 @@ class IssuedBook(Book):
         super().__init__(title, author)
         self.issued_to = issued_to
         self.issued_date = issued_date
-    def display_book_details(self):
-        super().display_book_details()
+    # def display_book_details(self):
+    #     super().display_book_details()
     def display_issued_book_details(self):
         super().display_book_details()
         print("Issued To :", self.issued_to)
         print("Issued Date :", self.issued_date)
 i_b = IssuedBook("OOP's in Python", "Bhaskar", "Vinay", "04-06-2026")
 i_b.display_issued_book_details()
+# i_b.display_book_details()
 
 
         
