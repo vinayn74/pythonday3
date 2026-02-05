@@ -24,6 +24,7 @@ class MobilePhone(ElectronicProduct):
         print("ram", self.ram)
         print("storage:", self.storage)
 oppo = MobilePhone("oppof23","23k","oppo","1 year","8gb","256gb")
-oppo.display_mobile_details()
+oppo.display_mobile_details()  
+oppo.display_electronic_product()
 
 
