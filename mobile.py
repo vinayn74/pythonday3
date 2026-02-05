@@ -5,7 +5,6 @@ class camera:
         print("The camera qualit is",self.camera_quality)
 class MusicPlayer:
     def __init__(self,sound_quality):
-        super()
         self.sound_quality = sound_quality
     def display_sound_details(self):
         print("The sound qualit is",self.sound_quality)
@@ -18,7 +17,7 @@ class SmartPhone(camera,MusicPlayer):
     def display_brand_details(self):
         print("The brand details are",self.brand)
         
-m1=SmartPhone("64px","good","Vivo")
-m1.display_camera_details()
-m1.display_sound_details()
-m1.display_brand_details()
+f23=SmartPhone("64px rear and 32px front","good","oppo")
+f23.display_camera_details()
+f23.display_sound_details()
+f23.display_brand_details()
