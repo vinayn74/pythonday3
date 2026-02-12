@@ -4,8 +4,6 @@ class Mobile:
         self.model = model
         self.price = price
     def __eq__(self, other):
-        if not isinstance(other , Mobile):
-            return NotImplemented
         return self.brand == other.brand and self.model == other.model
 
 m1 = Mobile("oppo","android",25000)
