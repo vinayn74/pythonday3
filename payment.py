@@ -1,8 +1,8 @@
 class Payment:
-    def pay(aelf):
+    def pay(self):
         print("The payment is succesful")
 class Google(Payment):
-    def pay(aelf):
+    def pay(self):
         print("The payment is Succesfull through Googlepay")
 class Phone(Payment):
     def pay(self):
