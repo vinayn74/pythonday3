@@ -24,9 +24,9 @@ class instagramAccountSystem:
         print("The archieved reel are:")
         if password == self.__password:
             for i in self.__archieved_reel:
-                print(i)
+                return i
         else:
-            print("Access Denied! Only followers can view private reels")
+            return "Access Denied! Only followers can view private reels"
 
     def set_password(self, old_password, new_password):
         if old_password == self.__password:
@@ -43,5 +43,5 @@ igacc.display_private_reel(True)
 igacc.add_archieved_reel("Daily bloog")
 igacc.add_archieved_reel("playing cricket with friends")
 igacc.add_archieved_reel("Mini Bloog")
-igacc.display_archieved_reel("123")
-igacc.set_password("1234","2313")
+print(igacc.display_archieved_reel("7483"))
+igacc.set_password("7483","2313")
