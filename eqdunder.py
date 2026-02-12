@@ -1,0 +1,17 @@
+class Mobile:
+    def __init__(self, brand, model , price):
+        self.brand = brand
+        self.model = model
+        self.price = price
+    def __eq__(self, other):
+        if not isinstance(other , Mobile):
+            return NotImplemented
+        return self.brand == other.brand and self.model == other.model
+
+m1 = Mobile("oppo","android",25000)
+m2 = Mobile("oppo", "android", 30000)
+m3 = Mobile("Apple" , "iphone", 80000)
+
+print(m1 == m2)
+print(m2 == m3)
+print(m1 == m3)
